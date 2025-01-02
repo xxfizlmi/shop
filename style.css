@@ -1,119 +1,77 @@
 :root {
   --bg-primary: linear-gradient(to right, #355e8d, #0f1a27);
-  --white: white;
-  --font-size-primary: 20px;
-  --padding-link: 10px 20px;
 }
 
+* {
+  border: 2px solid;
+}
 html,
 body {
   margin: 0;
 }
+
 header {
   background: var(--bg-primary);
 }
 
-.nav {
+nav {
   display: flex;
-  justify-content: space-between;
-}
-
-.nav-logo {
-  align-self: center;
-  padding: var(--padding-link)
-}
-.nav ul {
-  display: flex;
-  padding: 0;
-  text-align: center;
   margin: 0;
 }
 
-.nav-link {
-  list-style-type: none;
-  padding: 11px 0;
-
+nav .logo {
+  align-content: center;
 }
 
-.nav-link a {
-  text-decoration: none;
-  font-size: var(--font-size-primary);
-  color: var(--white);
-  padding: var(--padding-link);
-  /* border: 2px solid; */
+nav ul {
 }
 
-.nav-link a:hover {
-  background: var(--bg-primary);
-}
-
-/* Section */
-
-section {
-  display: flex;
-  border: 2px solid;
-}
-
-/* Aside */
 aside {
   background: var(--bg-primary);
-  width:fit-content;
-  padding: 20px;
 }
-
-.aside-link {
-  list-style-type: none;
-}
-
 aside ul {
-  padding: 0;
-}
-aside .aside-link {
-  padding: var(--padding-link)
+  flex-direction: column;
 }
 
-aside a {
-  font-size: var(--font-size-primary);
-  color: var(--white);
+.row {
+    display: flex;
 }
-
-/*  */
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: var(--white);
-  padding: 20px; 
-
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    border: 5px solid red;
 }
 
 .card {
   background: var(--bg-primary);
   padding: 5px;
-  margin: 20px;
-  width: max-content;
-  border-radius: 3vh;
-  /* margin: 20px; */
-}
-img {
   border-radius: 2vh;
-  width: 25ch;
-}
-p {
-  color: var(--white);
-  font-size:20px;
+  margin: 5px;
 }
 
+.card img {
+    width: 20ch;
+    border-radius: 2vh;
+}
 
-/* Footer */
 
 footer {
   background: var(--bg-primary);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+li {
+  list-style-type: none;
   padding: 20px;
 }
 
-footer p{
-  font-size: var(--font-size-primary);
-  text-align: center;
-  color: var(--white);
+a {
+  text-decoration: none;
+  /* padding: 20px; */
 }
